@@ -7,9 +7,10 @@
 
 .title {
   height: auto;
-  max-width: $title-width;
+  max-width: 700px;
   width: 100%;
   margin: $title-margin-top 0 $title-margin-bottom 0;
+  margin-bottom: 40px;
   position: relative;
   z-index: $z-index-title; // make sure title on top of sunburst
 
@@ -19,6 +20,18 @@
       margin: $title-margin-top 0 $title-margin-bottom * $factor 0;
     }
   }
+}
+
+.pokeLogo {
+  width: 185px;
+  height: auto;
+  margin-bottom: -30px;
+}
+
+.circlesLogo {
+  width: 185px;
+  height: auto;
+  margin-bottom: -30px;
 }
 
 .control-group {
@@ -40,7 +53,7 @@
     padding: $slot-border-width;
     margin: 0 auto;
     border-radius: $slot-border-radius;
-    @include shadow('large');
+    @include shadow("large");
     background: $color-slot-background url(@images/light-blubs.svg);
     position: relative;
     z-index: $z-index-slot; // make sure slot is on top of sunburst
@@ -109,7 +122,7 @@
   margin: $draw-button-margin-top 0 0;
   position: relative;
   z-index: $z-index-draw-button; // make sure draw button on top of sunburst
-
+  margin-bottom: 70px;
   @each $media-query, $factor in $scale-factors {
     @media #{$media-query} {
       width: $draw-button-width * $factor;
@@ -118,7 +131,7 @@
       line-height: max((1.75rem * $factor), 1rem);
       padding: 1rem * $factor 0.625rem * $factor;
       border-radius: 0.625rem * $factor;
-      @include shadow('large', $factor);
+      @include shadow("large", $factor);
     }
   }
 }
@@ -127,7 +140,7 @@
   position: fixed;
   z-index: $z-index-settings - 1;
   background-color: $color-settings-mask;
-  content: ' ';
+  content: " ";
   top: 0;
   right: 0;
   height: 100%;

@@ -6,11 +6,12 @@ include ../mixins/icons
       +svg-icon.red.big(svg-icon-name='fullscreen')
     button#settings-button.icon-button.icon-button--small
       +svg-icon.red.big(svg-icon-name='settings')
-
+  
   canvas#confetti-canvas.confetti
+  img.pokeLogo(src="~@images/dareToRoamLogo.png" alt="dare to roam logo" )
 
   #lucky-draw
-    img.title(src="~@images/title.svg" alt="Lucky Draw")
+    img.title(src="~@images/LUCKYDRAW.svg" alt="Lucky Draw")
 
     .slot
       .slot__outer
@@ -22,6 +23,8 @@ include ../mixins/icons
         img(src="~@images/sunburst.svg" alt="sunburst")
 
     button#draw-button.solid-button Draw
+    div
+    img.circlesLogo(src="~@images/circlesLogo.png" alt="circles life logo")
 
   #settings.settings
     #settings-panel.settings__panel
