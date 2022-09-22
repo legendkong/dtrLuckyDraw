@@ -14,6 +14,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
+          nvm use 14
           npm install
           npm run build
 
