@@ -2,13 +2,13 @@
   display: inline-block;
   border: none;
   appearance: none;
-  @include shadow('large') border-radius: 0.625rem;
+  @include shadow("large") border-radius: 0.625rem;
   background-color: $color-button-default-background;
-  color: $color-button-text;
+  color: black;
   padding: 1rem 0.625rem;
   font-size: 1.75rem;
   line-height: 1.75rem;
-  font-weight: 700;
+  font-weight: 900;
   font-family: inherit;
   text-decoration: none;
   text-align: center;
