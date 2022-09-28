@@ -19,15 +19,15 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "baseUrl": "/",
     "paths": {
-      "@": ["src/*"],
-      "@js/*": ["src/assets/js/*"],
-      "@styles/*": ["src/assets/scss/*"],
-      "@images/*": ["src/assets/images/*"],
-      "@fonts/*": ["src/assets/fonts/*"]
+      "@": ["/src/*"],
+      "@js/*": ["/src/assets/js/*"],
+      "@styles/*": ["/src/assets/scss/*"],
+      "@images/*": ["/src/assets/images/*"],
+      "@fonts/*": ["/src/assets/fonts/*"]
     },
   },
-  "include": ["src/**/*.ts", "./declarations.d.ts"],
+  "include": ["/src/**/*.ts", "./declarations.d.ts"],
   "exclude": [],
 }
